@@ -7,13 +7,16 @@
     <title>Pulse_step</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>   
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -61,7 +64,7 @@
                 <button data-modal="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo__link">
                     или
-                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
 
             </div>
@@ -81,7 +84,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart">
+                    <img src="icons/advantages/heart.png" alt="heart" class="animate__animated animate__heartBeat">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__description">Мы работаем для того,
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -92,7 +95,7 @@
                     <div class="advantages__subtitle">Учим бегать</div>
                     <div class="advantages__description">Помогаем с обучением
                         правильной технике бега!
-                        Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING</a>.
+                        Дружим с крупнейшей школой бега в России - <a href="https://ilovesupersport.com/running" target="_blank">I LOVE RUNNING</a>.
                     </div>
                 </div>
             </div>
@@ -111,7 +114,7 @@
             </div>
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш e-mail" type="email">
 
                 <button class="button button_submit">Заказать консультацию</button>
@@ -119,7 +122,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -135,9 +138,9 @@
             <button type="button" class="prev"><img src="icons/left.png"></button>
             <button type="button" class="next"><img src="icons/right.png"></button>
         </div>
-    </section>
+    </div>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -147,21 +150,22 @@
             </ul>
 
             <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay>
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
                             <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>                    
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>                        
+                            <ul class="catalog-item__list">
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li> 
+                                <a href="#" class="catalog-item__back">назад</a>                              
+                            </ul>                           
+                            
                     </div>                    
                     
                     <hr>
@@ -175,7 +179,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -203,7 +207,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -231,7 +235,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -259,7 +263,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -287,7 +291,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -317,7 +321,7 @@
                 </div>                
             </div>
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -347,7 +351,7 @@
                 </div>
             </div>
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.7s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -375,7 +379,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.8s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content ">
                             <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -410,7 +414,7 @@
     <section class="feedback">
         <div class="container">
             <h2 class="title">Отзывы клиентов</h2>         
-            <div class="feedback__item"> 
+            <div class="feedback__item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"> 
                 <img src="img/rewievs/1.jpg" alt="rewiev_1" class="feedback__img">                   
                 <div class="feedback__text">
                     <div class="feedback__title">Ирина Иванченко</div>                 
@@ -426,7 +430,7 @@
                 </div>                
             </div>                
             <hr>
-            <div class="feedback__item">
+            <div class="feedback__item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <img src="img/rewievs/2.jpg" alt="rewiev_2" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__title">Иван Сёмочкин</div>                
@@ -441,7 +445,7 @@
     
             </div>
             <hr>
-            <div class="feedback__item">
+            <div class="feedback__item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
                 <img src="img/rewievs/3.jpg" alt="rewiev_3" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__title">Юлия Дашкина</div>                
@@ -480,7 +484,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш e-mail" type="email">
                 <button class="button button_submit">Заказать консультацию</button>
             </form>            
@@ -492,7 +496,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш e-mail" type="email">
                 <button class="button button_submit">Купить</button>
             </form>            
@@ -504,15 +508,20 @@
             </div>                       
             <div class="modal__descr">Наш менеджер свяжется с вами 
             в ближайшее время!</div>                        
-        </div>
-
-        
+        </div>        
     </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="scroll up">
+    </a>
+    
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
