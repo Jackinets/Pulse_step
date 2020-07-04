@@ -1,5 +1,5 @@
 .footer {
-    height: 630px;
+    max-height: 630px;
     position: relative;
     &__info {
         padding: 50px 68px 60px 68px;
@@ -56,5 +56,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &__map {
+        height: 630px;
     }
 }

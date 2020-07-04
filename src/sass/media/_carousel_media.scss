@@ -1,0 +1,37 @@
+@media (max-width: 991px) {    
+
+    .carousel {
+        &__inner {                       
+            img {
+                width: 85%;
+            }
+        }
+
+        .prev, .next {
+            display: none;
+        }    
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        &__inner {
+            width: 70%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel {
+        padding: 60px 0;
+        &__inner {
+            img {
+            width: 100%;
+            }
+        }    
+    }
+}
+

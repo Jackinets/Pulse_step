@@ -111,13 +111,26 @@ const slider = tns({
 	nav: true,
 	navPosition: "bottom",    
 	responsive: {		 
-		768: {
+		320: {
+			edgePadding: 20,
+			gutter: 20,
 			nav: true
+		},
+		576: {
+			nav: true
+		},
+
+		768: {
+			nav: true,
 		},
 
 		992: {
 			nav: false
-		}	
+		},
+		
+		1200: {
+			nav: false
+		}
 	}
 });
 

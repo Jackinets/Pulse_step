@@ -1,0 +1,22 @@
+@media (max-width: 991px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    body {
+        line-height: 1.25;
+    }
+
+    .container {
+        padding: 5px;
+    }
+    
+    .pageup {
+        right: 5px;
+        width: 30px;
+        height: 30px;
+    }
+}

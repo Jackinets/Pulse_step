@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+    .header {
+        &__contacts {
+            button {
+                width: 225px;
+                height: 55px;
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        button {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 300px;
+            height: 60px;
+            font-size: 19px;
+        }
+    }
+
+    .consultation {
+        .button {
+            &_submit {
+                transform: none;
+            }
+        }
+    }
+}

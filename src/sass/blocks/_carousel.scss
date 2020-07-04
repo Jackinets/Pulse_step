@@ -34,16 +34,25 @@
         }
     }
 
-    .tns-nav {
+    .tns-nav {        
         margin: 0 auto;
         width: fit-content;
+        position: absolute;
+        bottom: -10%;   
+        left: 50%;  
+        transform: translateX(-50%);
 
         button {
-            background-color: blue;
+            height: 10px;
+            width: 4px; 
+            border-radius: 100%;
+            margin: 0 2px; 
+            border: none;  
+            background-color: rgba(52, 119, 235, .8);
         }
 
         .tns-nav-active {
-            background-color: red;
+            background-color: rgba(176, 33, 38, .8)
         }
     }
 }
